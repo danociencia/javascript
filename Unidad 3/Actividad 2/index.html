@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de la compra</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .status {
+      font-weight: bold;
+      color: #007bff;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Lista de la compra</h1>
+    <p>Añade <strong>"leche"</strong> quita <strong> "leche"</strong> o <strong>"vacía la lista entera"</strong>.</p>
+    <button id="btnStart">Activar Micrófono</button>
+    <p class="status" id="statusText">Estado: Inactivo</p>
+
+    <input type="text" id="producto" placeholder="Producto">
+    <button id="btnAnadir">Añadir</button>
+    <button id="btnQuitar">Quitar</button>
+    <button id="btnVaciar">Vaciar</button>
+
+    <ul id="lista"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
