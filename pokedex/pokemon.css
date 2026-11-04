@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: red;
+}
+
+.cargando {
+  color: blue;
+}
+
+.error {
+  color: red;
+}
+
+.correcto {
+  color: green;
+}
+
+.rejilla {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.tarjeta {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.tarjeta img {
+  width: 100px;
+}
+
+.ficha {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.ficha:empty {
+  display: none;
+}
+
+.ficha img {
+  width: 200px;
+}
+
+@media (max-width: 600px) {
+  .rejilla {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
